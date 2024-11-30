@@ -1,0 +1,23 @@
+services:
+  prestashop:
+    container_name: prestashop
+    image: prestashop/prestashop:8.2-fpm
+    restart: unless-stopped
+    volumes:
+      - ./www/html/:/var/www/html
+    env_file:
+      - .env
+
+  nginx:
+    container_name: nginx
+    image: nginx:1.21
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./www/html/:/var/www/html:ro
+      - ./infra/nginx/conf.d/:/etc/nginx/conf.d/
+    env_file:
+      - .env
+    depends_on:
+      - prestashop
