@@ -1,0 +1,1 @@
+To enable APC caching, I've run the following 'pecl install apcu' Then enabled it by running th efollowing 'echo "extension=apcu.so" > apcu.ini'

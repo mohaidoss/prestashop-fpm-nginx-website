@@ -14,7 +14,7 @@ services:
     image: nginx:1.21
     restart: unless-stopped
     ports:
-      - 80:80
+      - 8089:80
     volumes:
       - ./www/html/:/var/www/html:ro
       - ./infra/nginx/conf.d/:/etc/nginx/conf.d/
