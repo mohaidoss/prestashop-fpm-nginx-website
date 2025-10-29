@@ -23,8 +23,24 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div id="banner-slider">
+    <div class="announcement-banner">
+        &#128680; <strong>LES EXPEDITIONS SONT DECALE JUSQU'AU 14 SEPTEMBRE !</strong> &#128680;
+    </div>
   <div class="banner-slide-top">
     <style>
+      .announcement-banner {
+          background-color: #ffeeba; /* A distinct alert color */
+          color: #856404;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 31px;
+          height: 31px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0 15px;
+      }
       #banner-slider .banner-slide-top {
         padding: 0;
         white-space: nowrap;
@@ -111,9 +127,6 @@
         }
       }
     </style>
-      <li>
-          &#128680; <strong>TOUTE EXPEDITION EST DECALE JUSQU'AU 8 MAI !</strong> &#128680;
-      </li>
 
     <ul id="banner-slide">
      <li>
