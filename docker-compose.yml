@@ -5,7 +5,8 @@ services:
     restart: unless-stopped
     volumes:
       - ./www/html/:/var/www/html
-      # - ./infra/php/zz-php.ini:/usr/local/etc/php/conf.d/zz-php.ini
+      - ./infra/php/w-php.ini:/usr/local/etc/php/conf.d/w-php.ini
+      - ./infra/php-fpm.d/www.conf:/usr/local/etc/php-fpm.d/www.conf
     env_file:
       - .env
 
